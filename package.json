@@ -9,8 +9,9 @@
     "type": "git",
     "url": "git://github.com/webinos/webinos-android.git"
   },
-  "dependencies": {
-    "webinos-pzp": "git://github.com/webinos/webinos-pzp.git",
-    "webinos-widget": "git://github.com/webinos/webinos-widget.git"
+  "dependencies":{
+    "webinos-pzp": "https://github.com/gguowei/webinos-pzp/tarball/lkgr",
+    "webinos-widget": "https://github.com/gguowei/webinos-widget/tarball/lkgr"
   }
 }
+
