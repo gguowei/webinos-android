@@ -160,3 +160,13 @@ In order to get pass this error, modify the custom_rules.xml file and add the "-
 
     <arg line="--msvs_version=2012"/>
 	
+## Chromium notes
+
+To update to latest chromium renderer please follow instructions at https://github.com/mlasak/android-content-view
+
+* The resulting ```export.zip``` is to be extracted in ```webinos-android/refs``` 
+* copy ```webinos-android/refs/shell_apk/assets/content_shell.pak``` to ```webinos-android/assets```
+* copy ```webinos-android/refs/shell_apk/libs/armeabi-v7a``` to ```webinos-android/libs```
+
+Rebuild webinos-android.
+
