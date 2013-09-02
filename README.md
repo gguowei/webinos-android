@@ -153,6 +153,10 @@ ADT Version 22.0.x is supported. We still need Ant to get the dependencies.
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> howto chromium update notes
 ## Windows Notes
 
 On windows, if you are using visual studio 2012, you will have to manually specify the visual studio version on node-gyp otherwise you will get an error:
@@ -171,5 +175,9 @@ To update to latest chromium renderer please follow instructions at https://gith
 
 Rebuild webinos-android.
 
+<<<<<<< HEAD
 =======
 >>>>>>> WP-1121: structure refactoring of config_profiles.json
+=======
+>>>>>>> howto chromium update notes
+>>>>>>> howto chromium update notes
