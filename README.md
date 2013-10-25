@@ -23,7 +23,7 @@ webinos-android is an Android application project with npm package management. O
 
     sudo apt-get install ia32-libs
 
-Other Linux distributions, emulated Linux environments, or Unix-like systems are not fully tested but should work, maybe with some twistings. It is also possible for you to derive a build process based on instructions here for other platforms like Windows, Mac OS. A few Windows build notes can be found in webinos-android/build_notes.md in the source package.
+Other Linux distributions, emulated Linux environments, or Unix-like systems are not fully tested but should work, maybe with some twistings. It is also possible for you to derive a build process based on instructions here for other platforms like Windows, Mac OS. Some Windows build notes and other tweaking tips can be found in webinos-android/build_notes.md in the source package.
 
 
 ### Prerequisites
@@ -133,7 +133,15 @@ ADT Version 22.0.x is supported. We still need Ant to get the dependencies.
   
   3) Click "Browse..." button, in the pop-up window select your webinos-android folder, click "OK".
   
-  4) In the "Import Projects" window, make sure in the "Project to Import" box only webinos-android is checked, then click "Finish".
+  4) In the "Project to Import" box of "Import Projects" window, select following projects and then click "Finish".
+    * webinos-android  
+    * base
+    * content
+    * eyes-free
+    * media
+    * net
+    * shell
+    * ui
 
 2. Get project dependencies (can be skipped if you have already run command line Ant build)
   
@@ -151,33 +159,3 @@ ADT Version 22.0.x is supported. We still need Ant to get the dependencies.
 
   bin/webinos-android.apk
 
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> howto chromium update notes
-## Windows Notes
-
-On windows, if you are using visual studio 2012, you will have to manually specify the visual studio version on node-gyp otherwise you will get an error:
-"error MSB8020: The builds tools for Visual Studio 2010 (Platform Toolset = 'v100') cannot be found".
-In order to get pass this error, modify the custom_rules.xml file and add the "--msvs_version=2012" argument in the npm command (line 30) by adding the following line:
-
-    <arg line="--msvs_version=2012"/>
-	
-## Chromium notes
-
-To update to latest chromium renderer please follow instructions at https://github.com/mlasak/android-content-view
-
-* The resulting ```export.zip``` is to be extracted in ```webinos-android/refs``` 
-* copy ```webinos-android/refs/shell_apk/assets/content_shell.pak``` to ```webinos-android/assets```
-* copy ```webinos-android/refs/shell_apk/libs/armeabi-v7a``` to ```webinos-android/libs```
-
-Rebuild webinos-android.
-
-<<<<<<< HEAD
-=======
->>>>>>> WP-1121: structure refactoring of config_profiles.json
-=======
->>>>>>> howto chromium update notes
->>>>>>> howto chromium update notes
